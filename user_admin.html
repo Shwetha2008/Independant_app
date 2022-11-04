@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>
+            User/Admin
+        </title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+    <center>
+        <div id="output">
+        <div id="clear">
+            
+        <h1>Hey there!! <br>Welcome to Environmentalist Org...<img id="logo" src="logo.webp"></h1>
+        
+        <h2> Are you an admin or user??</h2>
+        <button onclick="user()" id="user">I'm a User...</button>
+        <br>
+        <br>
+        <button onclick="admin()" id="admin">I'm an Admin..</button>
+        
+        </div>
+        </div>
+
+    </center>
+
+    <style>
+        body
+        {
+            text-align: center;
+            background: url("backdrop.jpg");
+            background-size: cover;
+        }
+
+        #user
+        {
+            width: 40%;
+            height: 35%;
+            font-size: 40px;
+            border-radius: 10px;
+            background-color: rgba(127, 255, 212, 0.742);
+        }
+        #admin
+        {
+            width: 40%;
+            height: 35%;
+            font-size: 40px;
+            border-radius: 10px;
+            background-color: rgba(37, 120, 26, 0.652);
+        }
+        h1
+        {
+            color:white;
+            width: 65%;
+            border-radius: 50px;
+        }
+        #logo
+        {
+            border-radius: 100px;
+            width: 80px;
+        }
+
+    </style>
+
+    <script>
+        function user()
+        {
+            window.location = "login.html";
+        }
+        function admin()
+        {           
+           window.location = "login_admin.html";
+        }
+    
+        
+    </script>
+
+    </body>
+</html>
